@@ -1,0 +1,86 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.container-fluid
+{
+    width: 100%;
+    margin:auto;
+}
+.main-heading
+{
+    background-color: rgb(47, 55, 104);
+    color: white;
+}
+.font-weight-bold
+{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: oblique;
+}
+.table-responsive
+{
+    max-width: 100%;
+    box-shadow: rgba(0,0,0,0.25) 0px 25px 50px -12px;
+}
+tr:hover
+{
+    background-color: rgb(24, 168, 252);
+    color: black;
+}
+td,
+th{
+    position: relative;
+}
+.table td,.table th
+{
+    padding: 0.75rem;
+    vertical-align: top;
+    border-top: none;
+}
+td:hover::after,th:hover::after
+{
+    content: "";
+    position: absolute;
+    background-color: #f2f2f2;
+    left:0;
+    top: -5000px;
+    height: 5000px;
+    width: 100%;
+    z-index: -1;
+
+}
+.table tr td:hover:nth-child(4)
+{
+    background-color: rgb(231, 83, 115);
+    color: aliceblue;
+    border: 0.5px olid rgb(12, 12,12);
+}
+.table tr td:hover:nth-child(2)
+{
+    background-color: rgb(102, 21, 38);
+    color: aliceblue;
+    border: 0.5px olid rgb(12, 12,12);
+}
+.table tr td:hover:nth-child(5)
+{
+    background-color: rgb(223, 127, 17);
+    color: aliceblue;
+    border: 0.5px olid rgb(12, 12,12);
+}
+.table tr td:hover
+{
+    background-color: rgb(117, 223, 112);
+    color: aliceblue;
+    border: 0.5px solid rgb(12, 12,12);
+}
+.thead-dark
+{
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: rgb(12, 12,12);
+    color: white;
+}
